@@ -26,6 +26,16 @@
         .box > div:nth-of-type(2){
             background: pink;
         }
+        .bc{
+            background: red;
+            /* background-clip: content-box; */
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            border: 10px solid black;
+            background-origin: content-box;
+            /* 这里需要对 background-clip  background-position backgrund-origin 去区别一下 */
+        }
     </style>
 </head>
 <body>
@@ -35,6 +45,9 @@
         <div></div>
         <div></div>
     </div>
+
+
+    <div class="bc">adsasd</div>
     
 </body>
 </html>
